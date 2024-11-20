@@ -321,6 +321,7 @@ input[type="submit"]:hover {
 
   #productos h2 {
     font-size: 28px; /* Reduce ligeramente el tamaño del título */
+    padding-left: 22px;
   }
 
   /* Reseñas */
