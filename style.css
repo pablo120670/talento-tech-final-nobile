@@ -1,0 +1,467 @@
+/* Estilos Globales */
+body {
+  overflow-x: hidden;
+  background-color: #d7d0d3;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+main {
+  padding: 0;
+}
+
+/* Estilo de la sección de inicio */
+#inicio {
+  background: linear-gradient(90deg, rgba(204, 204, 204, 0.75) 47%, rgba(159, 206, 215, 1) 79%, rgba(142, 211, 204, 1) 100%);
+}
+
+/* Estilos del menú */
+.menu {
+  background: linear-gradient(90deg, rgba(204, 204, 204, 0.75) 47%, rgba(159, 206, 215, 1) 79%, rgba(142, 211, 204, 1) 100%);
+}
+
+a {
+  color: rgb(172, 79, 79);
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Estilo para el contenedor del header */
+header .contenedor img {
+  width: 85%;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: #f5f5f5;
+  background: linear-gradient(90deg, rgba(204, 204, 204, 0.75) 47%, rgba(159, 206, 215, 1) 79%, rgba(142, 211, 204, 1) 100%);
+}
+
+.contenedor .boton {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 50px;
+  left: 34%;
+  transform: translateX(-50%); /* Centra el botón horizontalmente */
+  z-index: 2;
+  border-color: #f1f1f1;
+  color: #e382a9;
+}
+
+/* Estilo de la imagen del contenedor */
+.contenedor img {
+  width: 100%;
+  margin-top: 50px;
+  border: hsl(0, 13%, 95%) solid;
+  position: relative;
+}
+
+/* Estilos de Footer */
+footer {
+  background: #16161600;
+  color: #452205;
+  padding: 20px;
+  font-weight: 700;
+  margin-top: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1050px;
+  background: #d7d0d3;
+}
+
+footer .copy {
+  font-size: 14px;
+  font-family: 'Playfair';
+  margin: 0 34px 15px 36px;
+  padding: 62px;
+  padding-bottom: 92px;
+}
+
+footer .redes li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer .redes i {
+  font-size: 27px;
+}
+
+/* Estilos de Productos */
+#productos {
+  background-color: #f5f5f5;
+  background: linear-gradient(90deg, rgba(204, 204, 204, 0.75) 47%, rgba(159, 206, 215, 1) 79%, rgba(142, 211, 204, 1) 100%);
+}
+
+#productos h2 {
+  font-size: 34px;
+  text-align: left;
+}
+
+.producto img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilos para cada producto */
+.producto {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+}
+
+.producto h4 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.producto p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* Estilos de Reseñas */
+.contenedor-reseñas {
+  display: grid;
+  padding: 94px 0;
+  background: linear-gradient(90deg, rgba(204, 204, 204, 0.75) 47%, rgba(159, 206, 215, 1) 79%, rgba(142, 211, 204, 1) 100%);
+}
+
+#reseñas {
+  text-align: center;
+  color: #080707;
+  font-size: 24px;
+}
+
+.contenedor-reseña {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reseña {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Playfair';
+}
+
+.contenedor-reseñas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.redes {
+  margin-bottom: 45px;
+}
+/* Estilos generales del formulario */
+.contacto {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+/* Estilos de la grilla del formulario */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas */
+  gap: 20px; /* Espacio entre las columnas y filas */
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"], input[type="email"], textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical; /* Permite cambiar el tamaño de la caja de texto */
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Aseguramos que el texto del checkbox esté alineado */
+label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  grid-column: span 2; /* Hace que el botón de submit ocupe ambas columnas */
+  background-color: #e382a9;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #c5738d;
+}
+
+
+@media (max-width: 768px) {
+  .logo {
+    width: 104%;
+  }
+
+  body {
+    background-size: contain; /* Ajusta el tamaño de fondo para que se adapte mejor */
+    padding: 20px; /* Añade algo de padding para no pegarse al borde */
+  }
+
+  .contenedor .boton {
+    font-size: 18px;
+    bottom: -79px;
+    left: 49%;
+  }
+
+  /* Estilos del contenedor de la cabecera */
+  .contenedor {
+    padding: 40px 20px; /* Agrega algo de padding para mejorar el espaciado */
+    text-align: center; /* Centra el contenido */
+  }
+
+  .contenedor img {
+    width: 101%; /* Ajusta el tamaño de la imagen para que se vea bien en pantallas medianas */
+  }
+
+  /* Menú de navegación */
+  nav ul {
+    flex-direction: row; /* El menú sigue en fila, pero con menos margen */
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 15px; /* Reduce el espacio entre los elementos del menú */
+  }
+
+  /* Productos */
+  .contenedor-productos {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajusta la cantidad de columnas */
+    gap: 15px; /* Reduce el espacio entre productos */
+  }
+
+  .producto img {
+    width: 100%; /* Asegura que las imágenes se ajusten bien */
+    max-width: 250px; /* Ajusta el máximo tamaño */
+  }
+
+  #productos h2 {
+    font-size: 28px; /* Reduce ligeramente el tamaño del título */
+  }
+
+  /* Reseñas */
+  .contenedor-reseñas {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedor-reseña {
+    margin-bottom: 30px; /* Ajusta el margen inferior */
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna en pantallas más grandes */
+    align-items: center; /* Centra el contenido */
+    justify-content: center; /* Centra el contenido */
+    padding: 20px;
+    background-color: #cecdcd;
+  } /* Agrega un color de fondo para mejor visibilidad */
+  }
+
+  footer .contenedor {
+    display: flex;
+    flex-direction: row; /* Cambia a fila para pantallas más pequeñas */
+    justify-content: space-between; /* Espacia los elementos de manera equitativa */
+    align-items: center;
+    width: 100%;
+    max-width: 100%; /* Elimina el límite de ancho */
+    padding: 10px 0;
+  }
+
+  footer .copy {
+    font-size: 14px; /* Ajusta el tamaño del texto */
+    margin: 0; /* Elimina márgenes adicionales */
+  }
+
+  footer .redes {
+    display: flex;
+    gap: 15px; /* Añade espacio entre los iconos de redes sociales */
+    justify-content: center; /* Centra los iconos de redes sociales */
+    align-items: center;
+  }
+
+  footer .redes li {
+    list-style-type: none; /* Elimina los puntos de lista */
+  }
+
+  footer .redes i {
+    font-size: 24px; /* Ajusta el tamaño de los iconos de redes sociales */
+  }
+
+
+  .redes ul {
+    padding-left: 11px;
+  }
+
+
+/* Estilos de la grilla del formulario */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas */
+  gap: 20px; /* Espacio entre las columnas y filas */
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"], input[type="email"], textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical; /* Permite cambiar el tamaño de la caja de texto */
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Aseguramos que el texto del checkbox esté alineado */
+label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  grid-column: span 2; /* Hace que el botón de submit ocupe ambas columnas */
+  background-color: #e382a9;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #c5738d;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  form {
+    grid-template-columns: 1fr; /* Solo una columna en pantallas pequeñas */
+  }
+
+  input[type="submit"] {
+    grid-column: span 1; /* El botón de submit ocupa solo una columna */
+  }
+
+  /* Ajustar el tamaño de la fuente de los labels en pantallas pequeñas */
+  label {
+    font-size: 12px; /* Tamaño de fuente más pequeño */
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    font-size: 14px; /* Ajustar el tamaño de la fuente para mejor legibilidad */
+  }
+
+  /* Añadir un pequeño padding en los campos para que no queden demasiado apretados */
+  input[type="text"], input[type="email"], textarea {
+    padding: 8px;
+  }
+
+  /* Espaciado entre los campos en pantallas pequeñas */
+  .form-group {
+    margin-bottom: 10px;
+  }
+}
+
+ 
