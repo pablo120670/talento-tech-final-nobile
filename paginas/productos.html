@@ -25,61 +25,9 @@
 <body>
     <section id="productos">
         <h2 class="bienvenidos">Bienvenidos a mi Tienda</h2>
-        <div class="contenedor-productos">
-            <div class="producto">
-                <h4>Velas Aromáticas</h4>
-                <p>Velas hechas a mano con esencias naturales para crear ambientes acogedores y relajantes.</p>
-                <img src="/imagenes/01_velas_aromaticas.jpg" alt="Velas Aromáticas">
-            </div>
-            <div class="producto">
-                <h4>Kit Agua</h4>
-                <p>Un kit esencial para mantener la hidratación y el cuidado personal en tu hogar.</p>
-                <img src="/imagenes/03_kit_hogar_1.jpg" alt="Kit Agua">
-            </div>
-            <div class="producto">
-                <h4>Kit Hogar</h4>
-                <p>Todo lo que necesitas para un hogar limpio y organizado en un práctico conjunto.</p>
-                <img src="/imagenes/03_kit_hogar_4.png" alt="Kit Hogar">
-            </div>
-            <div class="producto">
-                <h4>Toallas Flores</h4>
-                <p>Toallas suaves y absorbentes con delicados motivos florales, perfectas para el baño.</p>
-                <img src="/imagenes/04_toallas.png" alt="Toallas Flores">
-            </div>
-            <div class="producto">
-                <h4>Toallones Colores</h4>
-                <p>Toallones grandes y coloridos para agregar estilo y comodidad a tu baño.</p>
-                <img src="/imagenes/06_aceite.jpg" alt="Toallones Colores">
-            </div>
-            
-        </div>
-        <div class="contenedor-productos">
-            <div class="producto">
-                <h4>Velas Aromáticas</h4>
-                <p>Velas hechas a mano con esencias naturales para crear ambientes acogedores y relajantes.</p>
-                <img src="/imagenes/01_velas_aromaticas.jpg" alt="Velas Aromáticas">
-            </div>
-            <div class="producto">
-                <h4>Kit Agua</h4>
-                <p>Un kit esencial para mantener la hidratación y el cuidado personal en tu hogar.</p>
-                <img src="/imagenes/03_kit_hogar_1.jpg" alt="Kit Agua">
-            </div>
-            <div class="producto">
-                <h4>Kit Hogar</h4>
-                <p>Todo lo que necesitas para un hogar limpio y organizado en un práctico conjunto.</p>
-                <img src="/imagenes/03_kit_hogar_4.png" alt="Kit Hogar">
-            </div>
-            <div class="producto">
-                <h4>Toallas Flores</h4>
-                <p>Toallas suaves y absorbentes con delicados motivos florales, perfectas para el baño.</p>
-                <img src="/imagenes/04_toallas.png" alt="Toallas Flores">
-            </div>
-            <div class="producto">
-                <h4>Toallones Colores</h4>
-                <p>Toallones grandes y coloridos para agregar estilo y comodidad a tu baño.</p>
-                <img src="/imagenes/06_aceite.jpg" alt="Toallones Colores">
-            </div>
-            
+ 
+        <div id="productos-container" class="contenedor-productos">
+          
         </div>
 
     </section>
@@ -128,6 +76,96 @@
             <div class="contenedor"><img src="imagenes/cupon.jpg" alt="" /></div>
           </div>
 
-      </footer>
-</body>
+
+        </footer>
+<script>
+
+      // Definir los productos en un array
+      const productos = [
+      {
+        nombre: 'Velas Aromáticas',
+        descripcion: 'Velas hechas a mano con esencias naturales para crear ambientes acogedores y relajantes.',
+        imagen: '/imagenes/01_velas_aromaticas.jpg',
+        alt: 'Velas Aromáticas'
+      },
+      {
+        nombre: 'Kit Agua',
+        descripcion: 'Un kit esencial para mantener la hidratación y el cuidado personal en tu hogar.',
+        imagen: '/imagenes/03_kit_hogar_1.jpg',
+        alt: 'Kit Agua'
+      },
+      {
+        nombre: 'Kit Hogar',
+        descripcion: 'Todo lo que necesitas para un hogar limpio y organizado en un práctico conjunto.',
+        imagen: '/imagenes/03_kit_hogar_4.png',
+        alt: 'Kit Hogar'
+      },
+      {
+        nombre: 'Toallas Flores',
+        descripcion: 'Toallas suaves y absorbentes con delicados motivos florales, perfectas para el baño.',
+        imagen: '/imagenes/04_toallas.png',
+        alt: 'Toallas Flores'
+      },
+      {
+        nombre: 'Toallones Colores',
+        descripcion: 'Toallones grandes y coloridos para agregar estilo y comodidad a tu baño.',
+        imagen: '/imagenes/06_aceite.jpg',
+        alt: 'Toallones Colores'
+      },
+      {
+        nombre: 'Velas Aromáticas',
+        descripcion: 'Velas hechas a mano con esencias naturales para crear ambientes acogedores y relajantes.',
+        imagen: '/imagenes/01_velas_aromaticas.jpg',
+        alt: 'Velas Aromáticas'
+      },
+      {
+        nombre: 'Velas Aromáticas',
+        descripcion: 'Velas hechas a mano con esencias naturales para crear ambientes acogedores y relajantes.',
+        imagen: '/imagenes/01_velas_aromaticas.jpg',
+        alt: 'Velas Aromáticas'
+      },
+      {
+        nombre: 'Velas Aromáticas',
+        descripcion: 'Velas hechas a mano con esencias naturales para crear ambientes acogedores y relajantes.',
+        imagen: '/imagenes/01_velas_aromaticas.jpg',
+        alt: 'Velas Aromáticas'
+      },
+      {
+        nombre: 'Velas Aromáticas',
+        descripcion: 'Velas hechas a mano con esencias naturales para crear ambientes acogedores y relajantes.',
+        imagen: '/imagenes/01_velas_aromaticas.jpg',
+        alt: 'Velas Aromáticas'
+      },
+      {
+        nombre: 'Velas Aromáticas',
+        descripcion: 'Velas hechas a mano con esencias naturales para crear ambientes acogedores y relajantes.',
+        imagen: '/imagenes/01_velas_aromaticas.jpg',
+        alt: 'Velas Aromáticas'
+      },
+    ];
+
+    
+    const contenedorProductos = document.getElementById('productos-container');
+
+    
+    for (let i = 0; i < productos.length; i++) {
+      const producto = productos[i];  
+
+      
+      const productoElement = document.createElement('div');
+      productoElement.classList.add('producto');  
+
+      
+      productoElement.innerHTML = `
+        <h4>${producto.nombre}</h4>
+        <p>${producto.descripcion}</p>
+        <img src="${producto.imagen}" alt="${producto.alt}">
+      `;
+
+      
+      contenedorProductos.appendChild(productoElement);
+    }
+</script>
+      </body>
+
 </html>
