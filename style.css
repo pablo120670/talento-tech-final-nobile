@@ -48,8 +48,8 @@ nav ul li a {
 
 /* Estilo para el contenedor del header */
 header .contenedor img {
-  width: 83%;
-  margin-bottom: -40px;
+  width: 77%;
+  margin-bottom: 49px;
 }
 .contenedor {
   display: flex;
