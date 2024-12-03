@@ -49,7 +49,7 @@ nav ul li a {
 /* Estilo para el contenedor del header */
 header .contenedor img {
   width: 80%;
-  margin-bottom: -39px;
+  margin-bottom: 1px;
 }
 .contenedor {
   display: flex;
@@ -292,11 +292,11 @@ input[type="submit"]:hover {
 }
 
 .imagen-carrito {
-  max-width: 100%;
-  width: 300px; /* Tamaño inicial */
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 31%;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #carrito-list {
@@ -523,7 +523,7 @@ input[type="submit"]:hover {
   }
 
   .imagen-carrito {
-      width: 80%;  /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+      width: 88%;  /* Ajusta el tamaño de la imagen en pantallas pequeñas */
   }
 
   #carrito-list li {
