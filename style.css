@@ -48,8 +48,8 @@ nav ul li a {
 
 /* Estilo para el contenedor del header */
 header .contenedor img {
-  width: 77%;
-  margin-bottom: 49px;
+  width: 80%;
+  margin-bottom: -39px;
 }
 .contenedor {
   display: flex;
@@ -185,11 +185,6 @@ footer .redes i {
   font-size: 24px;
 }
 
-.contenedor-reseña {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .reseña {
   font-weight: 600;
@@ -202,6 +197,9 @@ footer .redes i {
   display: flex;
   justify-content: center;
   gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .redes {
@@ -487,8 +485,7 @@ input[type="submit"]:hover {
 
 
 
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
+ 
   form {
     grid-template-columns: 1fr; 
   }
@@ -539,7 +536,7 @@ input[type="submit"]:hover {
   html {
     scroll-behavior: smooth;
   }
-}
+
 
 
  
