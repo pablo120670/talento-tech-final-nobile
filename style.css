@@ -33,6 +33,7 @@ nav ul {
   display: flex;
   justify-content: center;
   padding: 0;
+  background: linear-gradient(90deg, rgba(204, 204, 204, 0.75) 47%, rgba(159, 206, 215, 1) 79%, rgba(142, 211, 204, 1) 100%);
 }
 
 nav ul li {
@@ -47,9 +48,9 @@ nav ul li a {
 
 /* Estilo para el contenedor del header */
 header .contenedor img {
-  width: 85%;
+  width: 83%;
+  margin-bottom: -40px;
 }
-
 .contenedor {
   display: flex;
   justify-content: center;
@@ -84,6 +85,7 @@ header .contenedor img {
 }
 
 /* Estilos de Footer */
+
 footer {
   background: #16161600;
   color: #452205;
@@ -92,6 +94,7 @@ footer {
   margin-top: 45px;
   text-align: center;
   display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente */
   justify-content: center;
   align-items: center;
 }
@@ -270,7 +273,54 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #c5738d;
 }
+/* Estilos para el carrito */
 
+#carrito {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+#carrito h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contenedor-carrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.imagen-carrito {
+  max-width: 100%;
+  width: 300px; /* Tamaño inicial */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#carrito-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#carrito-list li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#total {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
   .logo {
@@ -284,7 +334,7 @@ input[type="submit"]:hover {
 
   .contenedor .boton {
     font-size: 18px;
-    bottom: -79px;
+    bottom: -104px;
     left: 49%;
   }
 
@@ -311,6 +361,7 @@ input[type="submit"]:hover {
   .contenedor-productos {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
     gap: 15px; 
+    
   }
 
   .producto img {
@@ -319,7 +370,7 @@ input[type="submit"]:hover {
   }
 
   #productos h2 {
-    font-size: 28px; 
+    font-size: 23px; 
     padding-left: 22px;
   }
 
@@ -434,6 +485,8 @@ input[type="submit"]:hover {
   background-color: #c5738d;
 }
 
+
+
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
   form {
@@ -462,6 +515,31 @@ input[type="submit"]:hover {
   .form-group {
     margin-bottom: 10px;
   }
+
+
+  #carrito {
+      padding: 30px 10px;
+  }
+
+  #carrito h2 {
+      font-size: 20px;
+  }
+
+  .imagen-carrito {
+      width: 80%;  /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+  }
+
+  #carrito-list li {
+      font-size: 16px;
+  }
+
+  #total {
+      font-size: 18px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
 }
+
 
  
