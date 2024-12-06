@@ -42,10 +42,11 @@ nav ul li {
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #000;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    color: #e181a9;
 }
-
 /* Estilo para el contenedor del header */
 header .contenedor img {
   width: 80%;
@@ -75,6 +76,40 @@ header .contenedor img {
   border-color: #f1f1f1;
   color: #e382a9;
 }
+/* Estilos para los botones */
+.comprar-btn, .ver-descripcion-btn {
+  background-color: #e181a9; /* Color de fondo predeterminado */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s, transform 0.2s; /* Efectos de transición */
+  margin-top: 10px; /* Espacio entre los botones */
+}
+
+/* Efecto hover para el botón de comprar */
+.comprar-btn:hover {
+  background-color: #c66b8b; /* Color de fondo al pasar el ratón */
+  transform: scale(1.05); /* Agrandar ligeramente el botón */
+}
+
+/* Efecto hover para el botón de ver descripción */
+.ver-descripcion-btn:hover {
+  background-color: #95d1d1; /* Color de fondo para el botón de descripción */
+  transform: scale(1.05); /* Efecto de agrandado */
+}
+
+/* Estilos adicionales si deseas hacer que los botones se vean diferentes */
+.comprar-btn {
+  background-color: #e181a9;
+}
+
+.ver-descripcion-btn {
+  background-color: #95d1d1; /* Un color diferente para distinguirlos */
+}
+
 
 /* Estilo de la imagen del contenedor */
 .contenedor img {
@@ -133,6 +168,7 @@ footer .redes i {
 #productos h2 {
   font-size: 34px;
   text-align: left;
+  color: #e181a9;
 }
 
 .producto img {
@@ -166,11 +202,13 @@ footer .redes i {
 .producto h4 {
   font-size: 1.2em;
   margin-top: 10px;
+  color: red;
 }
 
 .producto p {
   font-size: 1em;
   margin-bottom: 10px;
+  color: red;
 }
 
 /* Estilos de Reseñas */
@@ -283,6 +321,7 @@ input[type="submit"]:hover {
 #carrito h2 {
   font-size: 24px;
   margin-bottom: 20px;
+  color: #e181a9; 
 }
 
 .contenedor-carrito {
@@ -308,6 +347,7 @@ input[type="submit"]:hover {
 #carrito-list li {
   font-size: 18px;
   margin-bottom: 10px;
+  color: red;
 }
 
 #total {
@@ -372,6 +412,7 @@ html {
     font-size: 23px; 
     padding-left: 22px;
   }
+  
 
   /* Reseñas */
   .contenedor-reseñas {
@@ -516,7 +557,7 @@ input[type="submit"]:hover {
 
 
   #carrito {
-      padding: 30px 10px;
+      padding: 0px 0px;
   }
 
   #carrito h2 {
@@ -530,6 +571,10 @@ input[type="submit"]:hover {
   #carrito-list li {
       font-size: 16px;
   }
+  strong {
+    font-weight: bold;
+    color: #e181a9;
+}
 
   #total {
       font-size: 18px;
