@@ -10,9 +10,6 @@
 <body>
     <header>
         <div class="menu">
-        
-
-
             <nav>
                 <ul>
                     <li><a href="/index.html">Inicio</a></li>
@@ -40,17 +37,6 @@
     </section>
 
     <footer>
-      
-
-      <nav>
-        <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="">Productos</a></li>
-            <li><a href="/paginas/contacto.html">Contacto</a></li>
-            
-        </ul>
-    </nav>
-</div>
         <div class="copy">
             <p>Designed by Tienda |Curso Talentochet</p>
         </div>
@@ -61,66 +47,10 @@
                 <li><i class="fa-brands fa-google"></i></li>
                 <li><i class="fa-solid fa-rss"></i></li>
             </ul>
-            
         </div>
-
     </footer>
 
-    <script>
-        // Definir los productos en un array con solo 10 productos
-        const productos = [
-            { nombre: 'Velas Aromáticas', descripcion: 'Velas hechas a mano...', imagen: '/imagenes/01_velas_aromaticas.jpg', alt: 'Velas Aromáticas', precio: 15 },
-            { nombre: 'Kit Agua', descripcion: 'Un kit esencial...', imagen: '/imagenes/03_kit_hogar_1.jpg', alt: 'Kit Agua', precio: 25 },
-            { nombre: 'Kit Hogar', descripcion: 'Todo lo necesario para el hogar...', imagen: '/imagenes/03_kit_hogar_4.png', alt: 'Kit Hogar', precio: 35 },
-            { nombre: 'Toallas Flores', descripcion: 'Toallas suaves...', imagen: '/imagenes/04_toallas.png', alt: 'Toallas Flores', precio: 20 },
-            { nombre: 'Toallones Colores', descripcion: 'Toallones grandes...', imagen: '/imagenes/06_aceite.jpg', alt: 'Toallones Colores', precio: 18 },
-            { nombre: 'Velas Aromáticas', descripcion: 'Velas hechas a mano...', imagen: '/imagenes/01_velas_aromaticas.jpg', alt: 'Velas Aromáticas', precio: 15 },
-            { nombre: 'Kit Agua', descripcion: 'Un kit esencial...', imagen: '/imagenes/03_kit_hogar_1.jpg', alt: 'Kit Agua', precio: 25 },
-            { nombre: 'Kit Hogar', descripcion: 'Todo lo necesario para el hogar...', imagen: '/imagenes/03_kit_hogar_4.png', alt: 'Kit Hogar', precio: 35 },
-            { nombre: 'Toallas Flores', descripcion: 'Toallas suaves...', imagen: '/imagenes/04_toallas.png', alt: 'Toallas Flores', precio: 20 },
-            { nombre: 'Toallones Colores', descripcion: 'Toallones grandes...', imagen: '/imagenes/06_aceite.jpg', alt: 'Toallones Colores', precio: 18 }
-        ];
-
-        const contenedorProductos = document.getElementById('productos-container');
-        const carritoList = document.getElementById('carrito-list');
-        const totalElement = document.getElementById('total');
-
-        let carrito = []; // Array para almacenar productos en el carrito
-        let total = 0;    // Total de la compra
-
-        // Función para agregar productos al carrito
-        function agregarAlCarrito(nombreProducto, precioProducto) {
-            carrito.push({ nombre: nombreProducto, precio: precioProducto });
-            total += precioProducto;
-            actualizarCarrito();
-        }
-
-        // Función para actualizar el contenido del carrito en la página
-        function actualizarCarrito() {
-            carritoList.innerHTML = ''; // Limpiar el carrito
-            carrito.forEach(producto => {
-                const li = document.createElement('li');
-                li.textContent = producto.nombre + ' - $' + producto.precio;
-                carritoList.appendChild(li);
-            });
-            totalElement.textContent = total; // Actualizar el total
-        }
-
-        // Crear los elementos de los productos
-        productos.forEach(producto => {
-            const productoElement = document.createElement('div');
-            productoElement.classList.add('producto');
-
-            productoElement.innerHTML = `
-                <h4>${producto.nombre}</h4>
-                <p>${producto.descripcion}</p>
-                <img src="${producto.imagen}" alt="${producto.alt}">
-                <p>$${producto.precio}</p>
-                <button class="comprar-btn" onclick="agregarAlCarrito('${producto.nombre}', ${producto.precio})">Comprar</button>
-            `;
-
-            contenedorProductos.appendChild(productoElement);
-        });
-    </script>
+    <!-- Enlace al archivo JS -->
+    <script src="script.js"></script>
 </body>
 </html>
