@@ -402,7 +402,10 @@ html {
     gap: 15px; 
     
   }
-
+.ver-descripcion-btn:hover {
+    background-color: #95d1d1;
+    transform: scale(1.05);
+}
   .producto img {
     width: 100%; 
     max-width: 250px; 
