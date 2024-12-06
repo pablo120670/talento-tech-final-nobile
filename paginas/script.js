@@ -1,4 +1,4 @@
-// Definir los productos en un array con solo 10 productos
+
 const productos = [
     { nombre: 'Velas Aromáticas', descripcion: 'Velas hechas a mano...', imagen: '/imagenes/01_velas_aromaticas.jpg', alt: 'Velas Aromáticas', precio: 15 },
     { nombre: 'Kit Agua', descripcion: 'Un kit esencial...', imagen: '/imagenes/03_kit_hogar_1.jpg', alt: 'Kit Agua', precio: 25 },
@@ -16,25 +16,26 @@ const contenedorProductos = document.getElementById('productos-container');
 const carritoList = document.getElementById('carrito-list');
 const totalElement = document.getElementById('total');
 
-let carrito = []; // Array para almacenar productos en el carrito
-let total = 0;    // Total de la compra
+let carrito = []; 
+let total = 0;    
 
-// Función para agregar productos al carrito
+
 function agregarAlCarrito(nombreProducto, precioProducto) {
     carrito.push({ nombre: nombreProducto, precio: precioProducto });
     total += precioProducto;
     actualizarCarrito();
 }
 
-// Función para actualizar el contenido del carrito en la página
+
 function actualizarCarrito() {
-    carritoList.innerHTML = ''; // Limpiar el carrito
+    carritoList.innerHTML = ''; 
     carrito.forEach(producto => {
         const li = document.createElement('li');
         li.textContent = producto.nombre + ' - $' + producto.precio;
         carritoList.appendChild(li);
     });
-    totalElement.textContent = total; // Actualizar el total
+    totalElement.textContent = total; 
+    
 }
 
 function mostrarDescripcionAmpliada(productoElement) {
