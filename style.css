@@ -154,8 +154,9 @@ footer .redes i {
   border-radius: 8px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px #FFEB3B;
 }
+
 
 .producto img {
   width: 100%;
