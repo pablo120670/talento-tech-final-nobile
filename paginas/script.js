@@ -41,7 +41,7 @@ carritoList.appendChild(li);
 
     });
 
-    totalElement.textContent = `$${total}`; 
+    totalElement.textContent = `${total}`; 
 
     // Guardar el carrito en localStorage
     localStorage.setItem('carrito', JSON.stringify(carrito));
