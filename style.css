@@ -49,7 +49,7 @@ nav ul li a {
 }
 /* Estilo para el contenedor del header */
 header .contenedor img {
-  width: 80%;
+  width: 50%;
   margin-bottom: 1px;
 }
 .contenedor {
@@ -112,7 +112,7 @@ header .contenedor img {
 
 /* Estilo de la imagen del contenedor */
 .contenedor img {
-  width: 100%;
+  width: 99%;
   margin-top: 50px;
   border: hsl(0, 13%, 95%) solid;
   position: relative;
@@ -377,6 +377,10 @@ html {
   }
 
   /* Estilos del contenedor de la cabecera */
+  header .contenedor img {
+    width: 104%;
+    
+}
   .contenedor {
     padding: 40px 20px; 
     text-align: center; 
