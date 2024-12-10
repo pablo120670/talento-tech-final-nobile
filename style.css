@@ -357,6 +357,30 @@ input[type="submit"]:hover {
 html {
   scroll-behavior: smooth;
 }
+/* Estilo global para todos los botones */
+button.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  background-color: #d5c7c7; 
+  color: white;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efecto hover para todos los botones */
+button.btn:hover {
+  background-color: #c66b8b; 
+  transform: scale(1.05); 
+}
+
+/* Estilo de enfoque cuando el botón es seleccionado */
+button.btn:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
 /* RESPONSIVE */
 
@@ -572,7 +596,7 @@ input[type="submit"]:hover {
   }
 
   #carrito-list li {
-      font-size: 16px;
+      font-size: 11px;
   }
   strong {
     font-weight: bold;
