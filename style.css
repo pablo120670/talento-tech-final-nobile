@@ -166,7 +166,7 @@ footer .redes i {
 
 #productos h2 {
   font-size: 34px;
-  text-align: left;
+  text-align: center;
   color: #e181a9;
 }
 
@@ -437,7 +437,7 @@ button.btn:focus {
 
   #productos h2 {
     font-size: 23px; 
-    padding-left: 22px;
+    padding-left: 35px;
   }
   
 
